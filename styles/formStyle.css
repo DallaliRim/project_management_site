@@ -1,0 +1,105 @@
+
+/*form button start*/
+.form-button {  
+    background-color: rgb(8, 49, 21);
+    color: white;
+    padding: 5px 50px;
+}
+#form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+#add-button:disabled {
+    background-color: rgb(163, 163, 163);
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    border-color: rgb(104, 119, 108);
+}
+/*form button end*/
+/*form input start*/
+#testtest {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+legend {
+    color: rgb(23, 32, 26);
+    font-weight: bold;
+}
+.outside-fieldset {
+    border: 1px dotted rgb(2, 17, 2);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 20px;
+}
+label {
+    height : 34px;
+    width : 50px;
+}
+
+form input {
+    width: 130px;
+    height: 30px;
+}
+select {
+    height: 36px;
+    width: 150px;
+}
+
+.inside-fieldset{
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    padding: 5px;
+    background-color: rgb(207, 216, 208);
+    height: 100%;
+    font-weight: bold;
+}
+.field-title {
+    border: 1px dotted rgb(4, 46, 23);
+    background-color: rgb(207, 216, 208);
+    width:30%;
+}
+#textarea-title {
+    width: 50%;
+    border: 1px dotted rgb(6, 43, 15);
+    background-color: rgb(207, 216, 208);
+}
+#testtest {
+    width: 100%;
+    margin: 0%;
+}
+#textarea-field {
+    display:flex;
+    flex-direction:column;
+}
+textarea {
+    height : 50%;
+}
+/*form input end*/
+/*feedback start*/
+.feedback-sign {
+    height : 20px;
+    width: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.feedback-text:not(:empty) {
+    background-color: rgb(207, 216, 208);
+    color :rgb(129, 27, 27);
+    width : 90%;
+    padding : 5px;
+    margin-left: 5px;
+}
+/*feedback end*/

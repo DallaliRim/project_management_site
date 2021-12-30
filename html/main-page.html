@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> 420-320 - assignment 01 </title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet"  href='../styles/formStyle.css'>
+        <link rel="stylesheet"  href='../styles/page.css'>
+        <script src="../js/main_program.js"> </script>
+        <script src="../js/manage_projects.js"> </script>
+        <script src="../js/utilities.js"> </script>
+    </head>
+    <body>
+        <header>
+            420-320 Project 1 - Academic Project Management
+        </header>
+        <section id="main-container">
+            <section id="top-section">
+                <form id="form">
+                    <fieldset>
+                        <legend> Fill In All required fields </legend>
+                        <div id="testtest">
+                            <div class="outside-fieldset">
+                                <div class ="inside-fieldset">
+                                    <label class="field-title"> project id </label> 
+                                    <input type="text" id="projectid" class="field-input" value="proj00" required>
+                                    <img class="feedback-sign" src="../images/blank.png">
+                                </div>
+                                <text class="feedback-text"></text>
+                                <div class ="inside-fieldset">
+                                    <label class="field-title"> Owner Name </label> 
+                                    <input type="text" id="ownername" class="field-input" value="name" required>
+                                    <img class="feedback-sign" src="../images/blank.png">
+                                </div>
+                                <text class="feedback-text"></text>
+                            </div> 
+                            <div class="outside-fieldset">
+                                <div class ="inside-fieldset">
+                                    <label class="field-title"> Title </label> 
+                                    <input type="text" id="title" class="field-input" value = "project title" required>
+                                    <img class="feedback-sign" src="../images/blank.png">
+                                </div>
+                                <text class="feedback-text"></text>
+                                <div class ="inside-fieldset">
+                                    <label class="field-title"> Category </label> 
+                                    <select class="field-input" id="category" required>
+                                        <option disabled value="default-dashes" selected="selected"> ---------- </option>
+                                        <option value="practical"> practical </option>
+                                        <option value="theoritcal"> theoritcal </option>
+                                        <option value="fundamental-research"> fundamental research</option>
+                                        <option value="empirical"> empirical </option>
+                                    </select>
+                                    <img class="feedback-sign" src="../images/blank.png">
+                                </div>
+                                <text class="feedback-text"></text>
+                            </div>
+                            <div class="outside-fieldset">
+                                <div class ="inside-fieldset">
+                                        <label class="field-title"> Hours </label> 
+                                        <input type="number" id="hours" min=0 class="field-input" value=0 >
+                                        <img class="feedback-sign" src="../images/blank.png">
+                                </div>
+                                <text class="feedback-text"></text>
+                                <div class ="inside-fieldset">
+                                    <label class="field-title"> Rate </label> 
+                                    <input type="number" id="rate" min=0 class="field-input" value = 0>
+                                    <img class="feedback-sign" src="../images/blank.png">
+                                </div>
+                                <text class="feedback-text"></text>
+                                <div class ="inside-fieldset">
+                                    <label class="field-title"> Status </label> 
+                                    <select class="field-input" id="status" required>
+                                        <option disabled value="default-dashes" selected="selected" > ---------- </option>
+                                        <option value="completed"> completed </option>
+                                        <option value="ongoing"> ongoing </option>
+                                        <option value="planned"> planned </option>
+                                    </select>
+                                    <img class="feedback-sign" src="../images/blank.png">
+                                </div>
+                                <text class="feedback-text"></text>
+                            </div>
+                            </div>
+                            <div class="outside-fieldset" >
+                                <div class="inside-fieldset" id="textarea-field">
+                                    <label id="textarea-title"> Short Description </label>   
+                                    <textarea id="description" class="field-input" required> Short description of the project. This is a sample. </textarea>
+                                    <img class="feedback-sign" src="../images/blank.png">
+                                </div>
+                                <text class="feedback-text"></text>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div id="form-buttons">
+                        <button type="submit" class="form-button" id="add-button"> Add </button>
+                        <button type="reset" class="form-button" id= "reset-button"> Reset </button>
+                    </div>
+                </form>
+                    
+                </section>
+                <section id="bottom-section">
+                    <div id="query-buttons">
+                        <button class="middle-button" id = "save-button"> Write (save) local </button>
+                        <button class="middle-button" id = "append-button"> Append local </button>
+                        <button class="middle-button" id="clear-local-button"> Clear local </button>
+                        <button class="middle-button" id = "local-button"> Load (read) local </button>
+                    </div>
+                        <input type="search" id="query-search" default="Enter your query...">   
+                    <div id="query-result">          
+                        <table id="table">
+                            <caption id="caption-table">  </caption>
+                            <tr>
+                                <th id="projid_head"> proj_id </th>
+                                <th id="owner_head"> owner </th>
+                                <th id="title_head"> proj_title </th>
+                                <th id="category_head"> proj_category </th>
+                                <th id="status_head"> proj_status </th>
+                                <th id="hours_head"> nber_hours </th>
+                                <th id="rate_head"> rate </th>
+                                <th id="description_head"> proj_descr </th>
+                                <th> edit </th>
+                                <th> delete </th>
+                            </tr>
+                        </table> 
+                    </div>
+                </section>
+            </section>
+            <footer>
+                Rim Dallali, 1937259, copyright Fall2021
+                <br>
+                Raagav Prasanna, 2036159, copyright Fall2021
+        </section>
+    </body>
+</html>
