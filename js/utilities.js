@@ -1,4 +1,3 @@
-//Rim Dallali
 //This function is going to be called often in order to always get the latest version of the form inputs
 function updateInputs() { 
     let projid = document.querySelector("#projectid");
@@ -30,14 +29,12 @@ function updateInputs() {
 /**
  * @param {number} success_count 
  */
-//Rim Dallali
 //This function enables and disables the add button depending on the amount of valid fields
 function enable_disable_button(success_count) {
     let addButton = document.querySelector("#add-button");
         addButton.disabled = (success_count != 8);
 }
 
-//Rim Dallali
 //This function validates the field inputs from the form depending on reggex patterns by displaying a feedback text, and an appropriate icon.
 function validateElement() { 
     let icon = document.querySelectorAll(".feedback-sign");
@@ -65,7 +62,6 @@ function validateElement() {
     }
 }
 
-//Rim Dallali
 //This function removes the validation feedback from each field input from the form
 function resetValidation() {
     let icon = document.querySelectorAll(".feedback-sign");
@@ -85,7 +81,6 @@ function resetValidation() {
 
 }
 
-//Rim Dallali
 //This function resets the form inputs values to the default ones
 function resetForm() {
     document.querySelector("#reset-button").addEventListener("click", () => {
@@ -98,10 +93,8 @@ function resetForm() {
 }
 
 /**
- * 
  * @param {number} head 
  */
-//Rim Dallali Raagav Prasanna
 /*This function is given n being the "position" where the event occurred and proceeds to sort the rows in respect to that position clicked
  until the table is completely sorted, the order of sort changes when the header is being clicked again*/
 function sortTable(head) {

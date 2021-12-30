@@ -1,4 +1,3 @@
-//Rim Dallali
 //This function creates a project object and adds it to the table every time the add button is clicked
 function createProjectObject() {
     resetValidation();
@@ -34,7 +33,6 @@ function createProjectObject() {
     });
 }
 
-//Rim Dallali
 //This function cadds an even listener to the fields input so that every time they change (event occurs) the validation shows up along with the feedback text
 function validationCall() {
     let inputs = document.querySelectorAll(".field-input");
@@ -43,7 +41,6 @@ function validationCall() {
     });
 }
 
-//Rim Dallali
 /*This function deletes the project (row) from the table depending on which trash can image the user clicked on, it automatically 
 updates on the local storage as well since it is built from the table */
 function deleteTableRow() { 
@@ -60,9 +57,8 @@ function deleteTableRow() {
 
 /**
  * @param {HTMLElement} trow
- *///Rim Dallali
- /* this function allows the wanted row that the user clicked on to be edited and allow new input form the 
-user on the specific row. it automatically updates on the local storage as well since it is built from the table */
+ * this function allows the wanted row that the user clicked on to be edited and allow new input form the 
+ * user on the specific row. it automatically updates on the local storage as well since it is built from the table */
 function editTableRow(trow) {
     if(trow.cells[8].firstChild.className == "saving-sign"){ 
         stopEditTableRow(trow);
@@ -83,8 +79,7 @@ function editTableRow(trow) {
 }
 /**
  * @param {HTMLElement} trow 
- *///Rim Dallali
- /*Depending on whether the passed row is being edited or not, this function allows the new inputs to be saved to the table and local storage
+ * Depending on whether the passed row is being edited or not, this function allows the new inputs to be saved to the table and local storage
  and the images of the edit button to be changes. it automatically updates on the local storage as well since it is built from the table */
 function stopEditTableRow(trow) {
     let cell = trow.cells;
@@ -100,7 +95,6 @@ function stopEditTableRow(trow) {
         document.querySelector("#caption-table").innerHTML = trow.cells[0].textContent + "'s changes have been saved";
 }
 
-//Rim Dallali
 //This function clears all projects from the local storage when the clear local button is being clicked
 function clearAllProjectsFromStorage() {
     document.querySelector("#clear-local-button").addEventListener("click", () => {
@@ -114,7 +108,6 @@ function clearAllProjectsFromStorage() {
     });
 }
 
-//Raagav Prasanna
 // Saves all projects in the current table to local storage while overwriting whatever is in the local Storage
 function saveAllProjects2Storage() { 
     let button = document.querySelector("#save-button");
@@ -148,7 +141,6 @@ function saveAllProjects2Storage() {
     });
 }
 
-// Raagav Prasanna
 // Takes all the projects from the localStorage and appends it to the table
 function readAllProjectsFromStorage() {
     let button = document.querySelector('#local-button');
@@ -194,7 +186,6 @@ function readAllProjectsFromStorage() {
     });
 }
 
-// Raagav Prasanna
 // Reactivley filters the table based on input in the query bar
 function filterProjects() {
     let search_bar = document.querySelector('#query-search');
@@ -235,7 +226,6 @@ function filterProjects() {
     });
 }
 
-//Raagav Prasanna
 // Takes the projects from the table and appends them to local Storage.
 function appendAllProjects2Storage() {
     let button = document.querySelector("#append-button");
